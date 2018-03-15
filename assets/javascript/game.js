@@ -18,8 +18,6 @@ document.onkeyup = function (event) {
     }
     if (remGuess === 0) {
         loss++ , gussedLetters = [], remGuess = 9;
-    }else if(wins != 1){
-        wins = 0, loss = 0, gussedLetters = [], remGuess = 9;
     } 
     var html =
 
