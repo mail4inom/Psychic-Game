@@ -1,11 +1,11 @@
-var listOfLetters = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"];
+var listOfLetters = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
 
 var wins = 0;
 var loss = 0;
 var remGuess = 9;
 var gussedLetters = [];
 document.onkeyup = function (event) {
-    var userGuess = event.key;
+    var userGuess = String.fromCharCode(event.keyCode).toLocaleLowerCase();
 
 
     var compGuess = listOfLetters[Math.floor(Math.random() * listOfLetters.length)];
@@ -18,7 +18,7 @@ document.onkeyup = function (event) {
     }
     if (remGuess === 0) {
         loss++ , gussedLetters = [], remGuess = 9;
-    } 
+    }
     var html =
 
         "<h3>Guess what letter I'm thinkin of</h3>" +
