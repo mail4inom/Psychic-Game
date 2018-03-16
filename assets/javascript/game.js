@@ -26,11 +26,12 @@ document.onkeyup = function (event) {
             }
             if (remGuess === 0) {
                 loss++ , guessedLetters = [], remGuess = 9;
-            } if (wins == 3) {
+            } 
+            if (wins === 3) {
                 alert("Congratulations, You won!!! ")
                 startGame = false;
                 reset()
-            } else if (loss == 3) {
+            } else if (loss === 3) {
                 alert("YOU LOSE TRY AGAIN.")
                 startGame = false;
                 reset()
