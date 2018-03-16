@@ -43,7 +43,7 @@ function showstats() {
         "<h5>Wins: " + wins + "</h5>" +
         "<h3>Losses: " + loss + "</h3>" +
         "<h3>Guesses left: " + remGuess + "</h3>" +
-        "<h3>You Guesses so far: " + guessedLetters + "</h3>";
+        "<h3>Your Guesses so far: " + guessedLetters + "</h3>";
     document.getElementById("game").innerHTML = html;
 };
 function reset() {
