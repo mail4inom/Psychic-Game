@@ -1,23 +1,25 @@
 body{
-    background: #999999;
+    background: #666666;
     line-height: 100px;
 }
 .jumbotron{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 52px;
-    color: blue;
     text-align: center;
     margin-top: 150px;
 }
-h4{
+h4, h5{
     color: red;
 }
 h2{
-    color: blueviolet;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
 }
 h3{
-    color: white;
+    font-size: 36px;
+    color: #ffffff;
 }
+
 @media screen and (max-width:980px){
     .container{
         width: 100%;

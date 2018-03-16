@@ -28,11 +28,7 @@ document.onkeyup = function (event) {
                 loss++ , guessedLetters = [], remGuess = 9;
             } 
             if (wins === 3) {
-                alert("Congratulations, You won!!! ")
-                startGame = false;
-                reset()
-            } else if (loss === 3) {
-                alert("YOU LOSE TRY AGAIN.")
+                alert("Congratulations, You won!!! ");
                 startGame = false;
                 reset()
             }
@@ -44,7 +40,7 @@ function showstats() {
     var html =
 
         "<h3>Guess what letter I'm thinkin of</h3>" +
-        "<h3>Wins: " + wins + "</h3>" +
+        "<h5>Wins: " + wins + "</h5>" +
         "<h3>Losses: " + loss + "</h3>" +
         "<h3>Guesses left: " + remGuess + "</h3>" +
         "<h3>You Guesses so far: " + guessedLetters + "</h3>";
